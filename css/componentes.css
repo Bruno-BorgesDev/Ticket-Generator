@@ -1,0 +1,52 @@
+:root {
+  --cor-0: hsl(0, 0%, 100%);
+  --cor-1: hsl(252, 6%, 83%);
+  --cor-2: hsl(245, 15%, 58%);
+  --cor-3: hsl(245, 19%, 35%);
+  --cor-4: hsl(248, 70%, 10%);
+  --cor-5: hsl(7, 88%, 67%);
+  --cor-6: hsl(7, 71%, 60%);
+}
+
+.branco {
+  color: var(--cor-0);
+}
+
+.cinza {
+  color: var(--cor-1);
+}
+
+.branco {
+  color: var(--cor-0);
+}
+
+.roxo {
+  color: var(--cor-2);
+}
+
+.roxo-escuro {
+  color: var(--cor-3);
+}
+
+.azul-escuro {
+  color: var(--cor-4);
+}
+
+.laranja {
+  color: var(--cor-5);
+}
+
+.laranja-escuro {
+  color: var(--cor-6);
+}
+
+.gradient {
+  background-image: linear-gradient(
+    0.25turn,
+    hsl(7, 86%, 67%),
+    hsl(0, 0%, 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
