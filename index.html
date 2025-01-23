@@ -1,57 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Conference ticket generator</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Conference ticket generator</title>  
 </head>
+
 <body>
+  <main>
+    <div class="logo-mark">
+      <img class="logo" src="./assets/images/logo-mark.svg" alt="logo-mark">    
+      <span class="name">Coding Conf</span>
+    </div>  
 
-  <!-- Form starts -->
+      <h1 class="title">Your Journey to Coding Conf 2025 Starts Here!</h1> 
+      <h2>Secure your spot at next year's biggest coding conference.</h2>
+    
+    <!-- Form starts -->
+    <div class="container">
+      <form action="">
+        <div>
+          <label for="file">Upload Avatar</label>
+          <div class="file-container">                    
+            <br>
+            <input type="file" name="file" id="file" accept="image/*" required>
+            <span> Drag and drop or click to upload</span>
+          </div>
+            <br>
+            <span id="frmt-aqv">Upload your photo (JPG or PNG, max size: 500KB).</span>
+            <span class="erro" id="erro-aquivo-grande">File too large. Please upload a photo under 500KB</span>
+            <span class="erro" id="erro-aquivo-formato">Invalid format, please, Upload your photo (JPG or PNG, max size: 500KB)</span>
+        </div>
 
-  Your Journey to Coding Conf 2025 Starts Here!
+        <div>
+          <label for="nome">Full Name</label>
+          <input type="text" name="nome" id="nome" required>
+          <span class="erro" id="erro-nome-necessario">Please enter your name</span>
+        </div>
 
-  Secure your spot at next year's biggest coding conference.
+        <div>
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="example@email.com" required>
+            <span class="erro" id="erro-email-necessario">Please enter your e-mail</span>
+          </div>
+          <span class="erro" id="erro-email-invalido">Please enter a valid email adress.</span>
+        </div>
 
-  Upload Avatar
-  Drag and drop or click to upload
-  Upload your photo (JPG or PNG, max size: 500KB).
+        <div>
+          <label for="github">GitHub Username</label>
+          <input type="text" name="github" id="github" placeholder="@yourusername" required>
+          <span class="erro" id="erro-github-necessario">Please enter your github username</span>
+        </div>
 
-  Full Name
+        <div>
+          <button>Generate My Ticket</button>
+        </div> 
+             
+      </form>
+    </div>
+  </main>
 
-  Email Address
-  example@email.com
-
-  GitHub Username
-  @yourusername
-
-  Generate My Ticket
-
-  <!-- Form ends -->
-
-  <!-- Generated tickets starts -->
-
-  Congrats, <!-- Full Name -->! Your ticket is ready.
-
-  We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.
-
-  Coding Conf
-  Jan 31, 2025 / Austin, TX
-
-  <!-- Generated tickets ends -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <script src="mensagemDeErro.js"></script>
+  <script src="validacaoDeEmail.js"></script>
+  <script src="validarTamanhoArquivo.js"></script>
+  <script src="validarTipoArquivo.js"></script>
 </body>
+
 </html>
