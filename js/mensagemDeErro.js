@@ -39,4 +39,3 @@ gitHub.addEventListener("blur", exibirErroGithub);
 botao.addEventListener("click", exibirErroNome);
 botao.addEventListener("click", exibirErroEmail);
 botao.addEventListener("click", exibirErroGithub);
-

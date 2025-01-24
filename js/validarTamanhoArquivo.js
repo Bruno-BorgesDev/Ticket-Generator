@@ -11,4 +11,3 @@ arquivoTamanho.addEventListener("change", function validarArquivo(event) {
     event.preventDefault();
   }
 });
-
