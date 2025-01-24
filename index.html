@@ -7,8 +7,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
-<<<<<<< HEAD
-  <title>Conference ticket generator</title>
+
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -21,85 +20,35 @@
       color: hsl(228, 45%, 44%);
     }
   </style>
-=======
-  <title>Conference ticket generator</title>  
->>>>>>> b2b3b3cc0d227a4505e2f4f7dec3b3a8c0e91492
+  =======
+  <title>Conference ticket generator</title>
+
 </head>
 
 <body>
   <main>
-<<<<<<< HEAD
-    <span>Coding Conf</span>
-    <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+    <div class="logo-mark">
+      <img class="logo" src="./assets/images/logo-mark.svg" alt="logo-mark">
+      <span class="name">Coding Conf</span>
+    </div>
 
-
+    <h1 class="title">Your Journey to Coding Conf 2025 Starts Here!</h1>
     <h2>Secure your spot at next year's biggest coding conference.</h2>
 
-    <!-- Form starts -->
-    <form action="">
-
-      <div class="file-container">
-        <label for="file">Upload Avatar</label>
-        <input type="file" name="file" id="file" accept="image/*" required>
-        <span> Drag and drop or click to upload</span>
-        <span id="frmt-aqv">Upload your photo (JPG or PNG, max size: 500KB).</span>
-        <span class="erro" id="erro-aquivo-grande">File too large. Please upload a photo under 500KB</span>
-        <span class="erro" id="erro-aquivo-formato">Invalid format, please, Upload your photo (JPG or PNG, max size: 500KB)</span>
-      </div>
-
-      <div>
-        <label for="nome">Full Name</label>
-        <input type="text" name="nome" id="nome" required>
-        <span class="erro" id="erro-nome-necessario">Please enter your name</span>
-      </div>
-
-      <div>
-        <label for="email">Email Address</label>
-        <input type="email" name="email" id="email" placeholder="example@email.com" required>
-        <span class="erro" id="erro-email-necessario">Please enter your e-mail</span>
-      </div>
-      <span class="erro" id="erro-email-invalido">Please enter a valid email adress.</span>
-      </div>
-
-      <div>
-        <label for="github">GitHub Username</label>
-        <input type="text" name="github" id="github" placeholder="@yourusername" required>
-        <span class="erro" id="erro-github-necessario">Please enter your github username</span>
-      </div>
-
-      <div>
-        <button>Generate My Ticket</button>
-      </div>
-  </main>
-  </form>
-
-  <script src="./js/mensagemDeErro.js"></script>
-  <script src="./js/validacaoDeEmail.js"></script>
-  <script src="./js/validarTamanhoArquivo.js"></script>
-  <script src="./js/validarTipoArquivo.js"></script>
-=======
-    <div class="logo-mark">
-      <img class="logo" src="./assets/images/logo-mark.svg" alt="logo-mark">    
-      <span class="name">Coding Conf</span>
-    </div>  
-
-      <h1 class="title">Your Journey to Coding Conf 2025 Starts Here!</h1> 
-      <h2>Secure your spot at next year's biggest coding conference.</h2>
-    
     <!-- Form starts -->
     <div class="container">
       <form action="">
         <div>
           <label for="file">Upload Avatar</label>
-          <div class="file-container">                    
+          <div class="file-container">
             <br>
             <input type="file" name="file" id="file" accept="image/*" required>
             <span> Drag and drop or click to upload</span>
           </div>
-            <br>
-            <span id="frmt-aqv">Upload your photo (JPG or PNG, max size: 500KB).</span>
-            <span class="erro" id="erro-aquivo-grande">File too large. Please upload a photo under 500KB</span>
-            <span class="erro" id="erro-aquivo-formato">Invalid format, please, Upload your photo (JPG or PNG, max size: 500KB)</span>
+          <br>
+          <span id="frmt-aqv">Upload your photo (JPG or PNG, max size: 500KB).</span>
+          <span class="erro" id="erro-aquivo-grande">File too large. Please upload a photo under 500KB</span>
+          <span class="erro" id="erro-aquivo-formato">Invalid format, please, Upload your photo (JPG or PNG, max size: 500KB)</span>
         </div>
 
         <div>
@@ -109,34 +58,31 @@
         </div>
 
         <div>
-            <label for="email">Email Address</label>
-            <input type="email" name="email" id="email" placeholder="example@email.com" required>
-            <span class="erro" id="erro-email-necessario">Please enter your e-mail</span>
-          </div>
-          <span class="erro" id="erro-email-invalido">Please enter a valid email adress.</span>
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" placeholder="example@email.com" required>
+          <span class="erro" id="erro-email-necessario">Please enter your e-mail</span>
         </div>
+        <span class="erro" id="erro-email-invalido">Please enter a valid email adress.</span>
+    </div>
 
-        <div>
-          <label for="github">GitHub Username</label>
-          <input type="text" name="github" id="github" placeholder="@yourusername" required>
-          <span class="erro" id="erro-github-necessario">Please enter your github username</span>
-        </div>
+    <div>
+      <label for="github">GitHub Username</label>
+      <input type="text" name="github" id="github" placeholder="@yourusername" required>
+      <span class="erro" id="erro-github-necessario">Please enter your github username</span>
+    </div>
 
-        <div>
-          <button>Generate My Ticket</button>
-        </div> 
-             
-      </form>
+    <div>
+      <button>Generate My Ticket</button>
+    </div>
+
+    </form>
     </div>
   </main>
-
-  <h1>teste</h1>
 
   <script src="mensagemDeErro.js"></script>
   <script src="validacaoDeEmail.js"></script>
   <script src="validarTamanhoArquivo.js"></script>
   <script src="validarTipoArquivo.js"></script>
->>>>>>> b2b3b3cc0d227a4505e2f4f7dec3b3a8c0e91492
 </body>
 
 </html>
