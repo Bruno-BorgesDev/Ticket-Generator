@@ -12,18 +12,6 @@ function exibirErroNome() {
 }
 nome.addEventListener("blur", exibirErroNome);
 
-// Exibir erro no campo de e-mail
-const email = document.getElementById("email");
-function exibirErroEmail() {
-  const emailerro = document.getElementById("email").value;
-  if (!emailerro) {
-    document.getElementById("erro-email-necessario").style.display = "block";
-  } else {
-    document.getElementById("erro-email-necessario").style.display = "none";
-  }
-}
-email.addEventListener("blur", exibirErroEmail);
-
 // Exibir erro no campo do github
 const gitHub = document.getElementById("github");
 function exibirErroGithub() {
@@ -37,5 +25,5 @@ function exibirErroGithub() {
 gitHub.addEventListener("blur", exibirErroGithub);
 
 botao.addEventListener("click", exibirErroNome);
-botao.addEventListener("click", exibirErroEmail);
+// botao.addEventListener("click", exibirErroEmail);
 botao.addEventListener("click", exibirErroGithub);
