@@ -6,25 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-
-
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-
   <title>Conference ticket generator</title>
 
 </head>
-
 <body>
   <main>
     <div class="logo-mark">
@@ -51,31 +35,29 @@
           <span class="erro" id="erro-aquivo-formato">Invalid format, please, Upload your photo (JPG or PNG, max size: 500KB)</span>
         </div>
 
-        <div>
+        <div class="item">
           <label for="nome">Full Name</label>
           <input type="text" name="nome" id="nome" required>
           <span class="erro" id="erro-nome-necessario">Please enter your name</span>
         </div>
 
-        <div>
+        <div class="item">
           <label for="email">Email Address</label>
           <input type="email" name="email" id="email" placeholder="example@email.com" required>
           <span class="erro" id="erro-email-necessario">Please enter your e-mail</span>
+          <span class="erro" id="erro-email-invalido">Please enter a valid email adress.</span>
+        </div>    
+    
+        <div class="item">
+          <label for="github">GitHub Username</label>
+          <input type="text" name="github" id="github" placeholder="@yourusername" required>
+          <span class="erro" id="erro-github-necessario">Please enter your github username</span>
         </div>
-        <span class="erro" id="erro-email-invalido">Please enter a valid email adress.</span>
-    </div>
 
-    <div>
-      <label for="github">GitHub Username</label>
-      <input type="text" name="github" id="github" placeholder="@yourusername" required>
-      <span class="erro" id="erro-github-necessario">Please enter your github username</span>
-    </div>
-
-    <div>
-      <button>Generate My Ticket</button>
-    </div>
-
-    </form>
+        <div class="item">
+          <button>Generate My Ticket</button>
+        </div>
+      </form>
     </div>
   </main>
 
