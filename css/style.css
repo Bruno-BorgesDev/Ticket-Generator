@@ -51,7 +51,7 @@ main {
 h2 {
   margin-top: 0;
   font-size: 20px;
-  color: var(--cor-1);
+  color: var(--cor-2);
   font-weight: lighter;
 }
 
@@ -67,6 +67,8 @@ h2 {
 
 label {
   padding: 0 0 10px;
+  color: var(--cor-2);
+
 }
 
 input {
