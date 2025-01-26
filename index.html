@@ -17,8 +17,8 @@
       <span class="name">Coding Conf</span>
     </div>
 
-    <h1 class="title">Your Journey to Coding Conf 2025 Starts Here!</h1>
-    <h2>Secure your spot at next year's biggest coding conference.</h2>
+    <h1 class="title" tabindex="1">Your Journey to Coding Conf 2025 Starts Here!</h1>
+    <h2 tabindex="2">Secure your spot at next year's biggest coding conference.</h2>
 
     <!-- Form starts -->
     <div class="container">
@@ -27,7 +27,7 @@
           <label>Upload Avatar</label>
           <div class="file-container">
             <br>
-            <input type="file" name="file" id="file" accept=".JPG, .PNG" required>
+            <input type="file" name="file" id="file" aria-description="anexe sua foto" accept=".JPG, .PNG" required>
             <label for="file">
               <img src="./assets/images/icon-upload.svg">
               Drag and drop or click to upload
@@ -41,25 +41,25 @@
 
         <div class="item">
           <label for="nome">Full Name</label>
-          <input aria-description="Campo para digítar seu nome completo" type="text" name="nome" id="nome" required>
+          <input aria-description="digite seu nome" type="text" name="nome" id="nome" required>
           <span class="erro" id="erro-nome-necessario" role="alert">Please enter your name</span>
         </div>
 
         <div class="item">
           <label for="email">Email Address</label>
-          <input type="email" name="email" id="email" placeholder="example@email.com" required>
+          <input type="email" name="email" id="email" aria-description="digite seu e-mail" placeholder="example@email.com" required>
           <span class="erro" id="erro-email-necessario" role="alert">Please enter your e-mail</span>
           <span class="erro" id="erro-email-invalido" role="alert">Please enter a valid email adress.</span>
         </div>
 
         <div class="item">
           <label for="github">GitHub Username</label>
-          <input type="text" name="github" id="github" placeholder="@yourusername" required>
+          <input type="text" name="github" id="github" aria-description="digite seu usário do github" placeholder="@yourusername" required>
           <span class="erro" id="erro-github-necessario" role="alert">Please enter your github username</span>
         </div>
 
         <div class="item">
-          <button>Generate My Ticket</button>
+          <button aria-description="aperte enter ou clique no botão para gerar o ingresso">Generate My Ticket</button>
         </div>
       </form>
     </div>
