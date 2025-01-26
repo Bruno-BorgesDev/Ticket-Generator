@@ -13,6 +13,7 @@ email.addEventListener("blur", function () {
   if (!campoEmail) {
     document.getElementById("erro-email-necessario").style.display = "block";
     erroEmailVazio = true;
+    email.focus();
   } else {
     document.getElementById("erro-email-necessario").style.display = "none";
   }
@@ -20,6 +21,7 @@ email.addEventListener("blur", function () {
   if (!erroEmailVazio && !verificadorEmail(campoEmail)) {
     document.getElementById("erro-email-invalido").style.display = "block";
     erroEmailIncorreto = true;
+    email.focus();
   } else {
     document.getElementById("erro-email-invalido").style.display = "none";
   }

@@ -9,6 +9,7 @@
   <title>Conference ticket generator</title>
 
 </head>
+
 <body>
   <main>
     <div class="logo-mark">
@@ -24,7 +25,7 @@
       <form action="">
         <div>
           <label>Upload Avatar</label>
-          <div class="file-container">                       
+          <div class="file-container">
             <br>
             <input type="file" name="file" id="file" accept=".JPG, .PNG" required>
             <label for="file">
@@ -34,27 +35,27 @@
           </div>
           <br>
           <span id="frmt-aqv">Upload your photo (JPG or PNG, max size: 500KB).</span>
-          <span class="erro" id="erro-aquivo-grande">File too large. Please upload a photo under 500KB</span>
-          <span class="erro" id="erro-aquivo-formato">Invalid format, please, Upload your photo (JPG or PNG, max size: 500KB)</span>
+          <span class="erro" id="erro-aquivo-grande" role="alert">File too large. Please upload a photo under 500KB</span>
+          <span class="erro" id="erro-aquivo-formato" role="alert">Invalid format, please, Upload your photo (JPG or PNG, max size: 500KB)</span>
         </div>
 
         <div class="item">
           <label for="nome">Full Name</label>
-          <input type="text" name="nome" id="nome" required>
-          <span class="erro" id="erro-nome-necessario">Please enter your name</span>
+          <input aria-description="Campo para digítar seu nome completo" type="text" name="nome" id="nome" required>
+          <span class="erro" id="erro-nome-necessario" role="alert">Please enter your name</span>
         </div>
 
         <div class="item">
           <label for="email">Email Address</label>
           <input type="email" name="email" id="email" placeholder="example@email.com" required>
-          <span class="erro" id="erro-email-necessario">Please enter your e-mail</span>
-          <span class="erro" id="erro-email-invalido">Please enter a valid email adress.</span>
-        </div>    
-    
+          <span class="erro" id="erro-email-necessario" role="alert">Please enter your e-mail</span>
+          <span class="erro" id="erro-email-invalido" role="alert">Please enter a valid email adress.</span>
+        </div>
+
         <div class="item">
           <label for="github">GitHub Username</label>
           <input type="text" name="github" id="github" placeholder="@yourusername" required>
-          <span class="erro" id="erro-github-necessario">Please enter your github username</span>
+          <span class="erro" id="erro-github-necessario" role="alert">Please enter your github username</span>
         </div>
 
         <div class="item">
@@ -67,6 +68,7 @@
   <script src="./js/mensagemDeErro.js"></script>
   <script src="./js/validacaoDeEmail.js"></script>
   <script src="./js/validarTamanhoEFormatoArquivo.js"></script>
+
 </body>
 
 </html>

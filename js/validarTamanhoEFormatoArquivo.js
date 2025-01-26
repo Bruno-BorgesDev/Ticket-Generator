@@ -10,6 +10,7 @@ arquivo.addEventListener("change", function () {
   if (tamanho < 500000) {
     document.getElementById("erro-aquivo-grande").style.display = "none";
     erroTamanho = true;
+    arquivo.focus();
   } else {
     document.getElementById("erro-aquivo-grande").style.display = "block";
   }
@@ -18,6 +19,7 @@ arquivo.addEventListener("change", function () {
     console.log(formato);
     document.getElementById("erro-aquivo-formato").style.display = "none";
     erroFormato = true;
+    arquivo.focus();
   } else {
     document.getElementById("erro-aquivo-formato").style.display = "block";
   }

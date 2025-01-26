@@ -6,10 +6,12 @@ function exibirErroNome() {
   const nomeerro = document.getElementById("nome").value;
   if (!nomeerro) {
     document.getElementById("erro-nome-necessario").style.display = "block";
+    nome.focus();
   } else {
     document.getElementById("erro-nome-necessario").style.display = "none";
   }
 }
+
 nome.addEventListener("blur", exibirErroNome);
 
 // Exibir erro no campo do github
@@ -18,6 +20,7 @@ function exibirErroGithub() {
   const githubErro = document.getElementById("email").value;
   if (!githubErro) {
     document.getElementById("erro-github-necessario").style.display = "block";
+    gitHub.focus();
   } else {
     document.getElementById("erro-github-necessario").style.display = "none";
   }
