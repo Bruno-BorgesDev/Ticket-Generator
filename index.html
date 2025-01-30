@@ -25,13 +25,14 @@
       <form action="">
         <div>
           <label>Upload Avatar</label>
-          <div class="file-container">
+          <div id="drop-area"class="file-container">
             <br>
             <input type="file" name="file" id="file" aria-description="anexe sua foto" accept=".JPG, .PNG" required>
-            <label for="file">
-              <img src="./assets/images/icon-upload.svg">
-              Drag and drop or click to upload
-            </label>
+            <label id="upload-label" for="file">              
+              <img id="upload-icon" src="./assets/images/icon-upload.svg">              
+              Drag and drop or click to upload              
+            </label>     
+            <img id="preview" src="#" alt="Pré-visualização da imagem" style="display:none;">
           </div>
           <br>
           <span id="frmt-aqv">Upload your photo (JPG or PNG, max size: 500KB).</span>
@@ -68,7 +69,6 @@
   <script src="./js/mensagemDeErro.js"></script>
   <script src="./js/validacaoDeEmail.js"></script>
   <script src="./js/validarTamanhoEFormatoArquivo.js"></script>
-
+  <script src="./js/dragNDrop.js"></script>
 </body>
-
 </html>
